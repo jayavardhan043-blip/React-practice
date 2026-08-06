@@ -1,9 +1,9 @@
-import TernaryOperator from "./practice/TernaryOperator";
+import EventWithArrowFunction from "./practice/EventWithArrowFunction";
 
 function App() {
   return (
     <div>
-      <TernaryOperator />
+      <EventWithArrowFunction />
     </div>
   );
 }
