@@ -1,21 +1,13 @@
-import { useState } from "react";
-import "./App.css";
+import UserContext from "./UserContext";
+import user from "./User";
 
-function App() {
-  const [show, setShow] = useState(false);
-
+function App(){
+  const username = "Jaya";
   return (
-    <div>
-      <h1>React Transition</h1>
-
-      <button onClick={() => setShow(!show)}>
-        {show ? "Hide Box" : "Show Box"}
-      </button>
-
-      <div className={show ? "box show" : "box"}>
-        Hello! I am a React box.
-      </div>
-    </div>
+    <UserContext.Provider
+    value = {username}>
+      <User />
+    </UserContext.Provider>
   );
 }
 
