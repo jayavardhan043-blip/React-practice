@@ -1,13 +1,18 @@
-.box {
-  width: 300px;
-  height: 150px;
-  margin-top: 20px;
-  background-color: lightblue;
-
-  opacity: 0;
-  transition: opacity 1s ease;
+button {
+    padding: 10px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
 }
 
-.box.show {
-  opacity: 1;
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.95);
 }
